@@ -1,0 +1,89 @@
+.contact-us-title-w {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  color: #000;
+}
+.contact-us-top {
+  padding-bottom: 80px;
+}
+.contact-us-main {
+  width: 49.375%;
+  margin: auto;
+}
+.contact-us-form {
+  padding-bottom: 60px;
+  > h3 {
+    margin-bottom: 4rem;
+    line-height: 1.6;
+    @extend.contact-us-title-w;
+  }
+  > p {
+    margin-bottom: 4rem;
+    @extend.contact-us-title-w;
+    span {
+      color: red;
+    }
+  }
+  .contact-us-item {
+    > label {
+      @extend.contact-us-title-w;
+      margin-bottom: 0.5rem;
+      span {
+        color: red;
+      }
+    }
+    input,
+    select {
+      height: 53px;
+      background-color: #ebebeb;
+    }
+    textarea {
+      background-color: #ebebeb;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .contact-us-top {
+    padding-bottom: 48px;
+  }
+  .contact-us-main {
+    width: 82.608695%;
+  }
+  .contact-us-form {
+    padding-bottom: 48px;
+    > h3 {
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+      @extend.contact-us-title-w;
+    }
+    > p {
+      margin-bottom: 3rem;
+      @extend.contact-us-title-w;
+      span {
+        color: red;
+      }
+    }
+    .contact-us-item {
+      > label {
+        @extend.contact-us-title-w;
+        margin-bottom: 0.5rem;
+        span {
+          color: red;
+        }
+      }
+      input,
+      select {
+        height: 53px;
+        background-color: #ebebeb;
+      }
+      textarea {
+        background-color: #ebebeb;
+      }
+    }
+  }
+  .contact-us-title-w {
+    font-size: 15px;
+  }
+}

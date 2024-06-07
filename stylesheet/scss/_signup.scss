@@ -1,0 +1,185 @@
+.signUp-main {
+  width: 45%;
+  margin: auto;
+  padding-bottom: 80px;
+  > h2 {
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    @extend .normal-font-style400;
+    margin-bottom: 4em;
+  }
+}
+.section-signPage-top {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 75%;
+    border-radius: 300px 300px 0 0;
+    background-color: #f9fbe6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+.section-signPage-content {
+  background-color: #f9fbe6;
+}
+.signUp-box {
+  .sign-item {
+    width: 43.75%;
+    text-decoration: none;
+    > span {
+      font-size: 18px;
+      padding: 0.53em 1.5555em;
+      border-radius: 50px;
+      color: #fff;
+      display: block;
+      width: fit-content;
+      margin: auto;
+      @extend.normal-font-style700;
+      background: linear-gradient(
+        0deg,
+        rgba(218, 226, 74, 1) 45%,
+        rgba(171, 205, 3, 1) 100%
+      );
+    }
+    &:first-child .signUp-item-pic {
+      background-size: cover;
+      background-image: url(../../src/web/login/consumer.png);
+      &:hover {
+        background-image: url(../../src/web/login/consumer-hover.png);
+      }
+    }
+    &:nth-child(2) .signUp-item-pic {
+      background-image: url(../../src/web/login/company.png);
+      background-size: cover;
+      &:hover {
+        background-image: url(../../src/web/login/company-hover.png);
+      }
+    }
+    .signUp-item-pic {
+      width: 100%;
+      padding-bottom: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.signUp-profile-main {
+  width: 49.375%;
+  margin: auto;
+  padding-bottom: 80px;
+  h2 {
+    font-size: 40px;
+    color: #3c6d06;
+    &::after {
+      content: "";
+      margin: 30px 0;
+      display: block;
+      border-top: 5px dotted #707070;
+    }
+    @extend .normal-font-style500;
+  }
+}
+.shop-guide-section {
+  h2 {
+    font-size: 20px;
+    color: #000;
+    line-height: 1.6;
+    @extend .normal-font-style500;
+    margin-bottom: 1em;
+  }
+  p {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.6;
+    @extend .normal-font-style400;
+    span {
+      line-height: 1.6;
+      color: red;
+    }
+  }
+  ul {
+    li {
+      position: relative;
+      padding-left: 20px;
+      &::before {
+        content: "•";
+        position: absolute;
+        top: 0.3em;
+        left: 0;
+        font-size: 20px;
+        color: black;
+      }
+    }
+  }
+}
+.shop-guide-section {
+  padding-top: 64px;
+}
+@media (max-width: 992px) {
+  .signUp-main {
+    width: 82.6086%;
+    padding: 48px 0 46px;
+    > h2 {
+      font-size: 15px;
+      margin-bottom: 3rem;
+    }
+  }
+  .section-signPage-top {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 75%;
+      border-radius: 300px 300px 0 0;
+      background-color: #f9fbe6;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  .section-signPage-content {
+    background-color: #f9fbe6;
+  }
+  .signUp-box {
+    .sign-item {
+      width: 48.53801%;
+      text-decoration: none;
+      > span {
+        font-size: 15px;
+      }
+      .signUp-item-pic {
+        width: 100%;
+        padding-bottom: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .signUp-profile-main {
+    width: 82.6086%;
+    padding: 48px 0 46px;
+    h2 {
+      font-size: 25px;
+    }
+  }
+  .shop-guide-section {
+    h2 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .shop-guide-section {
+    padding-top: 48px;
+  }
+}

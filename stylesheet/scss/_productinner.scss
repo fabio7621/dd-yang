@@ -1,0 +1,238 @@
+.products-inner-top-main {
+  margin: auto;
+}
+.section-products-inner {
+  .swiper {
+    width: 100%;
+    max-width: 749px;
+    height: 80%;
+    max-height: 749px;
+    padding: 0;
+  }
+}
+.product-inner-txt {
+  width: 80%;
+  padding-left: 10px;
+
+  h1 {
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    color: #3c6d06;
+    margin-bottom: 0.5em;
+  }
+  span {
+    width: fit-content;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 0.05em;
+    display: block;
+    padding: 0.5em 1.4em;
+    margin-bottom: 1em;
+    background: linear-gradient(
+      0deg,
+      rgba(218, 226, 74, 1) 45%,
+      rgba(171, 205, 3, 1) 100%
+    );
+    border-radius: 50px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #000;
+    line-height: 1.6;
+  }
+}
+.product-inner-linebar {
+  width: 80%;
+  height: 5px;
+  margin: 27px 0 36px;
+  @extend .public-dotted-style;
+}
+.product-inner-addCart {
+  .inner-addCart-price {
+    flex-direction: column;
+    font-family: "Work Sans", sans-serif;
+    margin: 0.8rem 0;
+    p {
+      font-size: 24px;
+      font-weight: 500;
+      color: #3c6d06;
+      order: 1;
+      span {
+        font-size: 32px;
+      }
+    }
+    aside {
+      font-size: 18px;
+      font-weight: 500;
+      color: #707070;
+    }
+  }
+  .inner-addCart-qty {
+    .addCart-qty-item {
+      label {
+        flex-shrink: 0;
+        margin-right: 0.8em;
+        font-size: 18px;
+        font-weight: 400;
+        color: #000;
+      }
+      select,
+      .input-group {
+        width: 30%;
+      }
+      & + .addCart-qty-item {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+.input-group {
+  border: 1px solid #dee2e6;
+  .input-group-text {
+    background-color: #fff;
+    border: none;
+    > i {
+      font-size: 16px;
+    }
+  }
+  .form-control {
+    border: none;
+  }
+}
+.shop-knowhow {
+  background-color: #ebebeb;
+  width: 55%;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #000;
+  padding: 0.6667em 1.6667em;
+  margin: 1.7778em 0 3.5556em;
+}
+.watch-more-product {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  > h4 {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #000;
+    margin-bottom: 0.8em;
+  }
+}
+
+@media (max-width: 1500px) {
+  .product-inner-txt {
+    width: 80%;
+    padding-left: 10px;
+
+    h1 {
+      font-size: 30px;
+    }
+    span {
+      font-size: 15px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .section-products-inner {
+    .swiper {
+      width: 100%;
+      height: 98%;
+    }
+  }
+  .products-inner-top-main {
+    width: 81.64251%;
+    margin: auto;
+  }
+  .product-inner-txt {
+    width: 100%;
+    padding-left: 0;
+    h1 {
+      font-size: 25px;
+    }
+    span {
+      font-size: 16px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .product-inner-addCart {
+    .inner-addCart-price {
+      flex-direction: row;
+      margin: 0.8rem 0;
+      align-items: center;
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        color: #3c6d06;
+        margin-right: 0.5rem;
+        order: 0;
+        span {
+          font-size: 24px;
+        }
+      }
+      aside {
+        font-size: 18px;
+        font-weight: 500;
+        color: #707070;
+      }
+    }
+    .inner-addCart-qty {
+      .addCart-qty-item {
+        flex-wrap: wrap;
+        label {
+          flex-shrink: 0;
+          margin-right: 0.8em;
+          font-size: 15px;
+          margin-bottom: 0.8em;
+        }
+        select,
+        .input-group {
+          width: 100%;
+        }
+        & + .addCart-qty-item {
+          margin-top: 1rem;
+        }
+        .input-group {
+          border: 1px solid #dee2e6;
+          .input-group-text {
+            background-color: #fff;
+            border: none;
+            > i {
+              font-size: 16px;
+            }
+          }
+          .form-control {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .shop-knowhow {
+    width: 100%;
+    font-size: 15px;
+  }
+  .watch-more-product {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    > h4 {
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 0.8em;
+    }
+  }
+  .product-inner-linebar {
+    margin: 20px 0 24px;
+    width: 100%;
+  }
+}

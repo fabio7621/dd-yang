@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,safari=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="大東羊食品工業股份有限公司" />
+    <meta name="description" content="大東羊食品工業股份有限公司" />
+    <title>大東羊食品工業股份有限公司</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Noto+Sans+TC:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./stylesheet/scss/all.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <!-- 手機板漢堡&Menu -->
+      <section class="top-nav d-block d-md-block d-lg-none">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid p-0">
+            <!-- logo -->
+            <a class="logopic d-block" href="./index.html">
+              <img class="w-100" src="./src/phone/icon/logo.png" alt="大東羊" />
+            </a>
+            <div class="phone-top-items d-flex align-items-center">
+              <a
+                href="./login.html"
+                class="phone-login d-flex align-items-center"
+              >
+                <div class="phone-login-pic">
+                  <img src="./src/web/icon/login.png" alt="login" />
+                </div>
+              </a>
+              <a
+                href="./shopCart-step01.html"
+                class="phone-cart d-flex align-items-center"
+              >
+                <div class="phone-cart-pic">
+                  <img src="./src/web/icon/shopping-bag.png" alt="cart" />
+                </div>
+                <span>(10)</span>
+              </a>
+              <a
+                data-bs-toggle="modal"
+                data-bs-target="#searchmodel"
+                class="phone-search"
+                href="javascript:void(0)"
+              >
+                <img src="./src/web/icon/search.png" alt="" />
+              </a>
+            </div>
+            <!-- hb -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <div class="hb-btn-container">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-button-container" for="menu-toggle">
+                  <div class="menu-button"></div>
+                </label>
+              </div>
+            </button>
+            <!-- menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav flex-wrap mx-auto">
+                <li class="nav-item top-navbar-item">
+                  <a class="nav-link top-navbar-txt" href="./about.html">
+                    關於我們
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a class="nav-link top-navbar-txt" href="./news.html">
+                    鮮活報報
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a class="nav-link top-navbar-txt" href="./product.html">
+                    產品介紹
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a
+                    class="nav-link top-navbar-txt"
+                    href="./product-recipe.html"
+                  >
+                    應用食譜
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a
+                    class="nav-link top-navbar-txt"
+                    href="./product-onlineShop.html"
+                  >
+                    線上購物
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a class="nav-link top-navbar-txt" href="./contact-us.html">
+                    聯絡我們
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a
+                    class="nav-link top-navbar-txt"
+                    href="./shop-ask-cart.html"
+                  >
+                    詢價車
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#langmodel"
+                    class="nav-link top-navbar-txt"
+                    href="javascript:void(0)"
+                  >
+                    繁體中文
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- 電腦板 -->
+      <section class="section-topNav-pc d-none d-md-none d-lg-block">
+        <div class="topNav-pc-main mx-auto d-flex align-items-center">
+          <a
+            href="./index.html"
+            class="topNav-pc-logo d-flex align-items-center"
+          >
+            <img src="./src/web/icon/logo.svg" alt="" />
+          </a>
+          <nav class="topNav-menu d-flex align-items-center">
+            <ul class="d-flex">
+              <li>
+                <a href="./about.html"
+                  >關於我們
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/about-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./news.html"
+                  >鮮活報報
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/news-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./product.html"
+                  >產品介紹
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/product-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./product-recipe.html"
+                  >應用食譜
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/recipe-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./product-onlineShop.html"
+                  >線上購物
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/shopping-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./contact-us.html"
+                  >聯絡我們
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/contact-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./shop-ask-cart.html"
+                  >詢價車
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/shopping-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <button
+              class="login-btn btn d-flex"
+              type="button"
+              onclick="window.location.href='./login.html'"
+            >
+              <div class="loginBtn-pic">
+                <img src="./src/web/icon/login.png" alt="login" />
+              </div>
+              <span>登入/註冊</span>
+            </button>
+            <a
+              class="top-shopCart-item d-flex align-items-center"
+              href="./shopCart-step01.html"
+            >
+              <div class="shopCart-item-pic">
+                <img src="./src/web/icon/shopping-bag.png" alt="Cart" />
+              </div>
+              <span>(10)</span>
+            </a>
+            <div
+              class="top-lang-item d-flex align-items-center"
+              data-bs-toggle="modal"
+              data-bs-target="#langmodel"
+            >
+              <div class="top-lang-pic">
+                <img
+                  width="25px"
+                  src="./src/web/icon/language.png"
+                  alt="earth"
+                />
+              </div>
+              <span>繁體中文</span>
+            </div>
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#searchmodel"
+              class="d-block top-search-pic"
+              href="#"
+            >
+              <img src="./src/web/icon/search.png" alt="search" />
+            </a>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <!-- 內文 -->
+    <main class="main-wrap">
+      <!-- for not pagebanner pages box -->
+      <div class="pages-space-box"></div>
+      <!-- for not pagebanner pages box end-->
+      <section class="section-pages-bread d-flex">
+        <div class="pages-bread-main">
+          <ol
+            class="ms-md-auto mx-auto mx-md-0 section-bread-list d-flex align-items-center"
+          >
+            <li><a href="./index.html">HOME</a></li>
+            <li>
+              <div class="bread-arrow-pic">
+                <img src="./src/web/icon/path-arrow.png" alt="" />
+              </div>
+            </li>
+            <li><a href="javascript:;">購物說明</a></li>
+          </ol>
+        </div>
+      </section>
+      <section class="section-new-inner">
+        <div class="section-new-inner-main">
+          <h1>購物說明</h1>
+          <div class="shop-guide-section">
+            <h2>一、 會員相關問題</h2>
+            <p class="mb-5">
+              Q1:如何加入會員？<br />
+              A:點選右上角「註冊新會員」，除了能使用手機＆電子郵件註冊之外，也可透過
+              Facebook 快速登入或是簡單填寫個人資料，即可完成註冊。
+            </p>
+            <h2>Q2:如何修改會員資料？</h2>
+            <p class="mb-5">
+              A:點選右上角登入會員後，可至「我的帳戶」更新個人資訊及密碼。
+            </p>
+            <h2>Q3:忘記密碼怎麼辦？</h2>
+            <p class="mb-5">
+              A:請於登入畫面點選「忘記密碼」，輸入您的註冊電子郵件，我們將會寄送「重新設定密碼」連結給您進行密碼設定。
+            </p>
+            <h2>二、優惠相關問題</h2>
+            <p class="mb-3">會員紅利積點</p>
+            <ul class="mb-5">
+              <li>
+                <p>消費滿100元贈送1點紅利。</p>
+              </li>
+              <li>
+                <p>紅利點數等同現金，1點 =1元，可直接折抵商品金額。</p>
+              </li>
+              <li>
+                <p>紅利積點可累計，且無使用時效性。</p>
+              </li>
+              <li>
+                <p>紅利點數無法折抵運費。</p>
+              </li>
+              <li>
+                <p>
+                  退貨後使用的紅利點數將無法歸還帳戶，除因商品瑕疵，請聯絡客服。
+                </p>
+              </li>
+            </ul>
+            <h2>三、訂單相關問題</h2>
+            <p class="mb-5">
+              Q1:要如何購買？<br />
+              A:登入會員帳號或註冊新會員完成，再將需要的產品加到購物車即可訂購。<br />
+               &nbsp;<br />
+              Q2:需要運費嗎？如何才能免配送費？<br />
+              A:每筆訂單運費150元，滿額1,500元 即可享有免配送費。<br />
+               &nbsp;<br />
+              Q3:如何查詢訂單配送進度？<br />
+              A:可至「訂單查詢」確認配送狀態及訂單明細。<br />
+               &nbsp;<br />
+              Q4:配送資訊寫錯了可以修改嗎？<br />
+              A:訂單付款成立後，即無法調整訂單內容，若需調整配送資訊，您可聯繫客服專線:(05)-236-7999，將有專人為您服務。
+            </p>
+            <h2>四、付費相關問題</h2>
+            <p class="mb-5">
+              Q1:可以貨到付款嗎？有哪些付款方式？<br />
+              A:目前僅提供信用卡付款及ATM轉帳服務，尚未支援以下支付方式如：LINE
+              PAY、街口帳戶支付及超商繳費等，付款方式將持續開通，詳情以公告為主。
+            </p>
+            <p class="mb-5">
+              Q2:線上信用卡刷卡如何進行？<br />
+              A:在結帳頁面可以選擇付款方式，在下拉選單點選「信用卡」，到下一步輸入信用卡資訊即可付款。
+            </p>
+            <p class="mb-5">
+              Q3:發票可以打統編嗎？<br />A:如有統編需求，可直接於訂購時填寫。
+            </p>
+            <p class="mb-5">
+              Q4:下單後，需多久付款？<br />A:請於下單後48小時內付款，逾期未付款，視該筆訂單取消。
+            </p>
+            <p class="mb-5">
+              Q5:訂購後什麼時候可以收到貨呢？<br />A:於確認收款後，約3~5個工作天內
+              (不含例假日) 送產品至指定地點。
+            </p>
+            <h2>五、宅配相關問題</h2>
+            <p class="mb-5">
+              Q1:請問產品是如何配送？<br />A:我們採用新竹物流－常溫配送您訂購的商品。尚未支援以下配送方式如：超商取貨、黑貓宅急便等，配送方式將持續開通，詳情以公告為主。
+            </p>
+            <p class="mb-5">
+              Q2:是否可以指定配達時間嗎？<br />A:約3~5個工作天內 (不含例假日)
+              將產品送達至指定地點(國定假日及例假日不出貨)。
+            </p>
+            <button
+              type="button"
+              class="btn know-more-btn mt-2 mx-auto d-flex align-items-center"
+              onclick="window.location.href='./product-onlineShop.html'"
+            >
+              <span>返回上一頁</span>
+              <div class="know-more-pic">
+                <img src="./src/web/icon/arrow.png" alt="" />
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- go-top -->
+    <div id="scrollBtn">
+      <img src="./src/web/icon/top.png" alt="" />
+    </div>
+    <!-- 內文END -->
+    <footer class="section-footer">
+      <div class="footer-main d-flex flex-wrap align-items-start">
+        <div class="footer-left">
+          <a href="./index.html" class="footer-logo-pic d-block">
+            <img src="./src/web/icon/logo2.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="footer-right row px-0 mx-0">
+          <div class="col-12 col-md-12 col-lg-7 px-0">
+            <ul class="footer-menu-list d-flex flex-wrap align-items-center">
+              <li>
+                <a href="./about.html">關於我們</a>
+              </li>
+              <li>
+                <a href="./news.html">鮮活報報</a>
+              </li>
+              <li>
+                <a href="./product.html">產品介紹</a>
+              </li>
+              <li>
+                <a href="./product-recipe.html">應用食譜</a>
+              </li>
+              <li>
+                <a href="product-onlineShop.html">線上購物</a>
+              </li>
+            </ul>
+            <div class="footer-contact-profile d-flex flex-column">
+              <div class="footer-contact-phone d-flex flex-wrap">
+                <a href="tel:+886-5-2367999"> 電話: (05)-236-7999 </a>
+                <a class="ms-2" href="tel:+886-5-236-3777">
+                  傳真: (05)-236-3777
+                </a>
+              </div>
+              <a href="mailto:sales@freshlife.com.tw"
+                >信箱: sales@freshlife.com.tw
+              </a>
+              <a
+                target="_blank"
+                href="https://maps.app.goo.gl/AP4fU2jJH9X8bDJD7"
+                >地址: 600嘉義市西區紅瓦里新民路111號</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-5 px-0">
+            <div class="footer-social-media">
+              <div class="footer-media-box d-flex flex-wrap">
+                <a
+                  href="https://www.facebook.com/ifreshlife"
+                  class="footer-media-item"
+                >
+                  <img
+                    width="50px"
+                    src="./src/web/icon/facebook.png"
+                    alt="fb"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/freshlife_tw/"
+                  class="footer-media-item"
+                >
+                  <img
+                    width="50px"
+                    src="./src/web/icon/instagram.png"
+                    alt="ig"
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/@FRESHLIFE1989"
+                  class="footer-media-item"
+                >
+                  <img width="50px" src="./src/web/icon/youtube.png" alt="yt" />
+                </a>
+              </div>
+              <button
+                class="btn footer-media-contact d-flex align-items-center"
+                onclick="window.location.href='./contact-us.html'"
+              >
+                <div class="media-contact-pic">
+                  <img src="./src/web/icon/contact.png" alt="mail pic" />
+                </div>
+                <span>聯絡我們</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-12 p-0 d-flex flex-wrap align-items-end justify-content-between"
+          >
+            <ul class="footer-shop-content d-flex flex-wrap align-items-center">
+              <li><a href="./shopping-guide.html">購物說明</a></li>
+              <li><a href="./shopping-return.html">退換貨政策</a></li>
+              <li><a href="./shopping-trems.html">會員服務條款</a></li>
+              <li><a href="./shopping-privacy.html">隱私權政策</a></li>
+            </ul>
+            <div class="copyright-main">
+              <p>
+                <span>Copyright 2024</span>&copy;大東羊食品工業股份有限公司
+                <a
+                  class="renu-http"
+                  href="https://www.renu.com.tw/
+              "
+                  >Designed By RENU
+                </a>
+                &nbsp;|&nbsp;<a href="./sitemap.html">網站導覽</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- 語言 model -->
+    <div
+      class="modal fade"
+      id="langmodel"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="langbox d-flex flex-column align-items-center mx-auto">
+            <div class="lang-pic">
+              <img src="./src/web/icon/language-56.png" alt="lang" />
+            </div>
+            <p>LANGUAGE</p>
+            <a href="https://www.google.com/">繁體中文</a>
+            <a href="#">English</a>
+            <a href="#">Tiếng Việt</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 搜尋 model -->
+    <div
+      class="modal fade"
+      id="searchmodel"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="search-model mx-auto input-group input-group-sm mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="請輸入關鍵字"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm"
+            /><a href="#" class="input-group-text" id="inputGroup-sizing-sm"
+              >搜尋</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <script src="./js/scroll-top.js"></script>
+    <!-- bs -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- Swiper JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="./js/controller.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="./js/scroll-top.js"></script>
+  </body>
+</html>

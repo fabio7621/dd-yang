@@ -1,0 +1,132 @@
+.update-main {
+  width: 85.48241%;
+}
+.member-update-btns {
+  > button {
+    padding: 0.8em 4.1em;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    .shop-card-arrow {
+      width: 22px;
+      transform: translateY(-5px);
+      margin-left: 16px;
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
+    }
+    &:first-child {
+      border: 1px solid #000000;
+      background-color: #fff;
+    }
+    &:nth-child(2) {
+      background-color: #dae24a;
+      position: relative;
+      z-index: 1;
+      justify-content: center;
+      &::before {
+        content: "";
+        border: 0px solid #e9ef9e;
+        display: block;
+        width: 0;
+        height: 100%;
+        border-radius: 50px;
+        background-color: #eaef9eb6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.3s ease-in-out;
+        z-index: -1;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+    }
+    span {
+      font-size: 1.042vw;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      color: #000000;
+    }
+  }
+}
+.update-btn-item {
+  width: 48%;
+  border-radius: 50px;
+  font-size: 20px;
+  @extend .normal-font-style500;
+}
+
+@media (max-width: 1360px) {
+  .update-btn-item {
+    font-size: 15px;
+  }
+}
+@media (max-width: 922px) {
+  .update-main {
+    width: 100%;
+
+    padding-bottom: 0px;
+  }
+  .update-btn-item {
+    width: 100%;
+    font-size: 16px;
+  }
+  .member-update-btns {
+    > button {
+      padding: 18px 0;
+      .shop-card-arrow {
+        width: 22px;
+        transform: translateY(-5px);
+        margin-left: 16px;
+        img {
+          width: 100%;
+          vertical-align: middle;
+        }
+      }
+      &:first-child {
+        border: 1px solid #000000;
+        background-color: #fff;
+        order: 1;
+      }
+      &:nth-child(2) {
+        background-color: #dae24a;
+        position: relative;
+        z-index: 1;
+        justify-content: center;
+        &::before {
+          content: "";
+          border: 0px solid #e9ef9e;
+          display: block;
+          width: 0;
+          height: 100%;
+          border-radius: 50px;
+          background-color: #eaef9eb6;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: 0.3s ease-in-out;
+          z-index: -1;
+        }
+
+        &:hover::before {
+          width: 100%;
+        }
+      }
+      span {
+        font-size: 1.042vw;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        color: #000000;
+      }
+    }
+  }
+}
+@media (max-width: 1360px) {
+  .member-update-btns > button .shop-card-arrow {
+    width: 15px;
+    transform: translateY(-4px);
+    margin-left: 16px;
+  }
+}

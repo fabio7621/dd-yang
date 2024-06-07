@@ -1,0 +1,150 @@
+.section-new-inner-main {
+  width: 66.25%;
+  margin: auto;
+  padding-bottom: 80px;
+  padding-top: 97px;
+  .new-inner-date {
+    p {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #fff;
+      padding: 0.5em 1.4em;
+      border-radius: 50px;
+      background: linear-gradient(
+        180deg,
+        rgba(171, 205, 3, 1) 0%,
+        rgba(218, 226, 74, 1) 100%
+      );
+    }
+    span {
+      font-weight: 500;
+      font-size: 20px;
+      color: #707070;
+      margin-left: 0.8em;
+    }
+    aside {
+      font-weight: 500;
+      font-size: 20px;
+      color: #707070;
+      margin-left: 0.2em;
+      font-family: "Work Sans", sans-serif;
+    }
+  }
+  > h1 {
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    color: #3c6d06;
+    margin: 0.6em 0 0;
+    line-height: 1;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      background-image: url(../../src/web/icon/Line101.png);
+      background-size: contain;
+      background-repeat: repeat;
+      height: 5px;
+      margin-top: 28px;
+    }
+  }
+
+  .new-inner-content {
+    padding-bottom: 80px;
+    p {
+      font-size: 18px;
+      letter-spacing: 0.05em;
+      font-weight: 400;
+      color: #000000;
+      line-height: 1.6;
+    }
+    .inner-content-pic {
+      width: 87.2641%;
+      margin-top: 32px;
+    }
+  }
+}
+.new-inner-share {
+  margin-top: 24px;
+  margin-bottom: 64px;
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin-right: 0.8em;
+  }
+  .inner-share-pic {
+    width: 28px;
+
+    & + .inner-share-pic {
+      margin-left: 12px;
+    }
+    &:last-child {
+      width: 18px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .section-new-inner-main {
+    width: 82.60869%;
+    margin: auto;
+    padding-bottom: 80px;
+    padding-top: 19px;
+    .new-inner-date {
+      p {
+        font-size: 16px;
+        padding: 9px 19px;
+      }
+      span {
+        font-size: 16px;
+        margin-left: 0.8em;
+      }
+      aside {
+        font-size: 16px;
+      }
+    }
+    > h1 {
+      font-size: 25px;
+      margin: 0.64em 0 0;
+      line-height: 1.4;
+    }
+
+    .new-inner-content {
+      padding-bottom: 48px;
+      p {
+        font-size: 15px;
+      }
+      .inner-content-pic {
+        width: 100%;
+        margin-top: 32px;
+      }
+    }
+  }
+  .new-inner-share {
+    margin-top: 16px;
+    margin-bottom: 48px;
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      color: #000000;
+    }
+    .inner-share-pic {
+      width: 28px;
+
+      & + .inner-share-pic {
+        margin-left: 12px;
+      }
+      &:last-child {
+        width: 18px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,safari=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="大東羊食品工業股份有限公司" />
+    <meta name="description" content="大東羊食品工業股份有限公司" />
+    <title>大東羊食品工業股份有限公司</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Noto+Sans+TC:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./stylesheet/scss/all.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- 預覽區塊 -->
+      <!-- 語言 -->
+      <div class="langbox d-flex flex-column align-items-center">
+        <div class="lang-pic">
+          <img src="./src/web/icon/language-56.png" alt="lang" />
+        </div>
+        <p>LANGUAGE</p>
+        <a href="#">繁體中文</a>
+        <a href="#">English</a>
+        <a href="#">Tiếng Việt</a>
+      </div>
+      <!-- 搜尋 -->
+      <div class="search-model input-group input-group-sm mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="請輸入關鍵字"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm"
+        /><span class="input-group-text" id="inputGroup-sizing-sm">搜尋</span>
+      </div>
+      <!-- shop -->
+      <div class="shop-cart-model position-relative">
+        <div class="cart-model-title position-absolute">
+          <p>購物車內合計有 2 項商品</p>
+        </div>
+        <div class="shop-cart-content d-flex align-items-center">
+          <a class="shop-cart-pic d-block">
+            <img src="./src/web/product/main-product-02.png" alt="" />
+          </a>
+          <div class="cart-model-txt">
+            <p>
+              原味晶球<br />
+              規格:2.5kg/包<br />
+              數量:2<br />
+            </p>
+          </div>
+          <div class="cart-model-del">
+            <img src="./src/web/icon/delete-Default.png" />
+          </div>
+        </div>
+        <button class="cart-model-btn btn" type="button">前往結帳</button>
+      </div>
+      <!-- 詢價車 -->
+      <div class="shop-cart-model position-relative">
+        <div class="cart-model-title position-absolute">
+          <p>詢價車內合計有 1 項商品</p>
+        </div>
+        <div class="shop-cart-content d-flex align-items-center">
+          <a class="shop-cart-pic d-block">
+            <img src="./src/web/product/main-product-02.png" alt="" />
+          </a>
+          <div class="cart-model-txt">
+            <p>原味晶球</p>
+          </div>
+          <div class="cart-model-del">
+            <img src="./src/web/icon/delete-Default.png" />
+          </div>
+        </div>
+        <button class="cart-model-btn btn" type="button">前往詢價</button>
+      </div>
+
+      <!-- 跳窗區塊 -->
+      <!-- 語言 -->
+      <div
+        class="modal fade"
+        id="langmodel"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="langbox d-flex flex-column align-items-center mx-auto">
+              <div class="lang-pic">
+                <img src="./src/web/icon/language-56.png" alt="lang" />
+              </div>
+              <p>LANGUAGE</p>
+              <a href="https://www.google.com/">繁體中文</a>
+              <a href="#">English</a>
+              <a href="#">Tiếng Việt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 搜尋 -->
+      <div
+        class="modal fade"
+        id="searchmodel"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="search-model input-group input-group-sm mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="請輸入關鍵字"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              /><a href="#" class="input-group-text" id="inputGroup-sizing-sm"
+                >搜尋</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- shop -->
+      <div
+        class="modal fade"
+        id="shop-cart-info"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="shop-cart-model position-relative">
+              <div class="cart-model-title position-absolute">
+                <p>購物車內合計有 2 項商品</p>
+              </div>
+              <div class="shop-cart-content d-flex align-items-center">
+                <a class="shop-cart-pic d-block">
+                  <img src="./src/web/product/main-product-02.png" alt="" />
+                </a>
+                <div class="cart-model-txt">
+                  <p>
+                    原味晶球<br />
+                    規格:2.5kg/包<br />
+                    數量:2<br />
+                  </p>
+                </div>
+                <div class="cart-model-del">
+                  <img src="./src/web/icon/delete-Default.png" />
+                </div>
+              </div>
+              <button class="cart-model-btn btn" type="button">前往結帳</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 詢價車 -->
+      <div
+        class="modal fade"
+        id="shop-ask-cart"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="shop-cart-model position-relative">
+              <div class="cart-model-title position-absolute">
+                <p>詢價車內合計有 1 項商品</p>
+              </div>
+              <div class="shop-cart-content d-flex align-items-center">
+                <a class="shop-cart-pic d-block">
+                  <img src="./src/web/product/main-product-02.png" alt="" />
+                </a>
+                <div class="cart-model-txt">
+                  <p>原味晶球</p>
+                </div>
+                <div class="cart-model-del">
+                  <img src="./src/web/icon/delete-Default.png" />
+                </div>
+              </div>
+              <button class="cart-model-btn btn" type="button">前往詢價</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 啟動按鈕 -->
+
+      <button
+        data-bs-toggle="modal"
+        data-bs-target="#langmodel"
+        class="btn bg-info"
+      >
+        語言
+      </button>
+      <button
+        data-bs-toggle="modal"
+        data-bs-target="#searchmodel"
+        class="btn bg-info"
+      >
+        搜尋
+      </button>
+      <button
+        data-bs-toggle="modal"
+        data-bs-target="#shop-cart-info"
+        class="btn bg-info"
+      >
+        購物車
+      </button>
+      <button
+        data-bs-toggle="modal"
+        data-bs-target="#shop-ask-cart"
+        class="btn bg-info"
+      >
+        詢價車
+      </button>
+    </div>
+
+    <!-- 底部 -->
+    <script src="./js/scroll-top.js"></script>
+    <!-- bs -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- Swiper JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="./js/controller.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="./js/scroll-top.js"></script>
+  </body>
+</html>

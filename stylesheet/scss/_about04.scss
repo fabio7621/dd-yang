@@ -1,0 +1,63 @@
+.section-about-steps {
+  padding: 60px 0 80px;
+  .about-steps-item {
+    text-align: center;
+    padding: 0 15px;
+    .steps-items-pic {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    > p {
+      font-size: 32px;
+      font-weight: 700;
+      color: #000000;
+      font-family: "Cuprum", sans-serif;
+      margin-top: 1em;
+    }
+    > span {
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: #000000;
+      margin-top: 0.5em;
+    }
+  }
+}
+.section-about-video {
+  margin-bottom: 80px;
+  position: relative;
+  width: 100%;
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+  .video-iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+@media (max-width: 992px) {
+  .section-about-steps {
+    padding: 48px 0;
+    .about-steps-item {
+      padding: 0 15px;
+      margin-bottom: 20px;
+      > p {
+        font-size: 24px;
+      }
+      > span {
+        font-size: 16px;
+      }
+    }
+  }
+  .section-about-video {
+    margin-bottom: 48px;
+  }
+}

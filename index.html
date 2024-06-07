@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,safari=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="大東羊食品工業股份有限公司" />
+    <meta name="description" content="大東羊食品工業股份有限公司" />
+    <title>大東羊食品工業股份有限公司</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Noto+Sans+TC:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./stylesheet/scss/all.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- fancybox Js -->
+    <script src="./js/fancybox.umd.js"></script>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <!-- 手機板漢堡&Menu -->
+      <section class="top-nav d-block d-md-block d-lg-none">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid p-0">
+            <!-- logo -->
+            <a class="logopic d-block" href="./index.html">
+              <img class="w-100" src="./src/phone/icon/logo.png" alt="大東羊" />
+            </a>
+            <div class="phone-top-items d-flex align-items-center">
+              <a
+                href="./login.html"
+                class="phone-login d-flex align-items-center"
+              >
+                <div class="phone-login-pic">
+                  <img src="./src/web/icon/login.png" alt="login" />
+                </div>
+              </a>
+              <a
+                href="./shopCart-step01.html"
+                class="phone-cart d-flex align-items-center"
+              >
+                <div class="phone-cart-pic">
+                  <img src="./src/web/icon/shopping-bag.png" alt="cart" />
+                </div>
+                <span>(10)</span>
+              </a>
+              <a
+                data-bs-toggle="modal"
+                data-bs-target="#searchmodel"
+                class="phone-search"
+                href="javascript:void(0)"
+              >
+                <img src="./src/web/icon/search.png" alt="" />
+              </a>
+            </div>
+            <!-- hb -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <div class="hb-btn-container">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-button-container" for="menu-toggle">
+                  <div class="menu-button"></div>
+                </label>
+              </div>
+            </button>
+            <!-- menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav flex-wrap mx-auto">
+                <li class="nav-item top-navbar-item">
+                  <a class="nav-link top-navbar-txt" href="./about.html">
+                    關於我們
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a class="nav-link top-navbar-txt" href="./news.html">
+                    鮮活報報
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a class="nav-link top-navbar-txt" href="./product.html">
+                    產品介紹
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a
+                    class="nav-link top-navbar-txt"
+                    href="./product-recipe.html"
+                  >
+                    應用食譜
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a
+                    class="nav-link top-navbar-txt"
+                    href="./product-onlineShop.html"
+                  >
+                    線上購物
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a class="nav-link top-navbar-txt" href="./contact-us.html">
+                    聯絡我們
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a
+                    class="nav-link top-navbar-txt"
+                    href="./shop-ask-cart.html"
+                  >
+                    詢價車
+                  </a>
+                </li>
+                <li class="nav-item top-navbar-item">
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#langmodel"
+                    class="nav-link top-navbar-txt"
+                    href="javascript:void(0)"
+                  >
+                    繁體中文
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- 電腦板 -->
+      <section class="section-topNav-pc d-none d-md-none d-lg-block">
+        <div class="topNav-pc-main mx-auto d-flex align-items-center">
+          <a
+            href="./index.html"
+            class="topNav-pc-logo d-flex align-items-center"
+          >
+            <img src="./src/web/icon/logo.svg" alt="" />
+          </a>
+          <nav class="topNav-menu d-flex align-items-center">
+            <ul class="d-flex">
+              <li>
+                <a href="./about.html"
+                  >關於我們
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/about-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./news.html"
+                  >鮮活報報
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/news-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./product.html"
+                  >產品介紹
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/product-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./product-recipe.html"
+                  >應用食譜
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/recipe-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./product-onlineShop.html"
+                  >線上購物
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/shopping-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./contact-us.html"
+                  >聯絡我們
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/contact-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./shop-ask-cart.html"
+                  >詢價車
+                  <div class="topNav-menu-pic">
+                    <img src="./src/web/icon/shopping-icon.png" alt="" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <button
+              class="login-btn btn d-flex"
+              type="button"
+              onclick="window.location.href='./login.html'"
+            >
+              <div class="loginBtn-pic">
+                <img src="./src/web/icon/login.png" alt="login" />
+              </div>
+              <span>登入/註冊</span>
+            </button>
+            <a
+              class="top-shopCart-item d-flex align-items-center"
+              href="./shopCart-step01.html"
+            >
+              <div class="shopCart-item-pic">
+                <img src="./src/web/icon/shopping-bag.png" alt="Cart" />
+              </div>
+              <span>(10)</span>
+            </a>
+            <div
+              class="top-lang-item d-flex align-items-center"
+              data-bs-toggle="modal"
+              data-bs-target="#langmodel"
+            >
+              <div class="top-lang-pic">
+                <img src="./src/web/icon/language.png" alt="earth" />
+              </div>
+              <span>繁體中文</span>
+            </div>
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#searchmodel"
+              class="d-block top-search-pic"
+              href="#"
+            >
+              <img src="./src/web/icon/search.png" alt="search" />
+            </a>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <!-- 內文 -->
+    <main class="main-wrap">
+      <section class="section-index-banner">
+        <div class="swiper indexSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="d-none d-md-block"
+                src="./src/web/index/banner.png"
+                alt=""
+              />
+              <img
+                class="d-block d-md-none"
+                src="./src/phone/index/banner-p593.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="d-none d-md-block"
+                src="./src/web/index/banner.png"
+                alt=""
+              />
+              <img
+                class="d-block d-md-none"
+                src="./src/phone/index/banner-p593.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="d-none d-md-block"
+                src="./src/web/index/banner.png"
+                alt=""
+              />
+              <img
+                class="d-block d-md-none"
+                src="./src/phone/index/banner-p593.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination2"></div>
+        </div>
+      </section>
+
+      <section class="section-index-video">
+        <video
+          class="index-video"
+          loop
+          muted
+          autoplay
+          preload="metadata"
+          playsinline
+          src="./src/web/index/index-movie.mp4#t=0.001"
+          type="video/mp4"
+        ></video>
+        <div class="section-index-txt">
+          <div class="section-index-txt-main">
+            <p>FRESH YOUR LIFE</p>
+            <span>Taste the ingredients Professional Manufacturer</span>
+            <a
+              class="watch-btn d-flex flex-column align-items-center justify-content-center ms-auto"
+              data-fancybox="video-gallery"
+              href="https://youtu.be/9YmpVACFYhQ?si=URDum7dxKRXPtHay"
+            >
+              <span>觀看影片</span>
+              <div class="watch-btn-arrow">
+                <img src="./src/web/icon/arrow.png" alt="arrow" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-index-abuot">
+        <div class="index-abuot-main">
+          <div class="index-public-title">
+            <h1>
+              <span>關</span>
+              <span>於</span>
+              <span>我</span>
+              <span>們</span>
+            </h1>
+            <span>ABOUT COMPANY</span>
+          </div>
+          <div class="index-abuot-content d-flex flex-wrap">
+            <div class="abuot-content-l d-flex flex-column">
+              <h2>
+                產品足跡遍布全球<br />
+                世界級品牌的幸福企業
+              </h2>
+              <div class="abuot-content-items d-flex flex-wrap">
+                <div class="abuot-content-item">
+                  <p>創造價值</p>
+                </div>
+                <div class="abuot-content-item">
+                  <p>永續經營</p>
+                </div>
+                <div class="abuot-content-item">
+                  <p>新鮮生活</p>
+                </div>
+              </div>
+              <p>
+                成立於1989年，多年來公司致力於生產健康取向的食品，從進口蒟蒻粉、製造蒟蒻仿生食品、蒟蒻麵到2018年正式轉型做凝膠類口感顆粒，每項產品都是團隊朝著低熱量的方向研發，希望能在食品多元化的社會帶來一絲健康的氣息。
+              </p>
+              <button
+                type="button"
+                class="btn know-more-btn d-none d-md-none d-lg-flex align-items-center"
+                onclick="window.location.href='./about.html'"
+              >
+                <span>了解更多</span>
+                <div class="know-more-pic">
+                  <img src="./src/web/icon/arrow.png" alt="" />
+                </div>
+              </button>
+            </div>
+            <div class="abuot-content-r">
+              <img
+                width="100%"
+                src="./src/web/index/index-about-img.png"
+                alt="abuot pic"
+              />
+            </div>
+            <button
+              type="button"
+              class="btn know-more-btn d-flex d-md-flex d-lg-none align-items-center mx-auto"
+              onclick="window.location.href='./about.html'"
+            >
+              <span>了解更多</span>
+              <div class="know-more-pic">
+                <img src="./src/web/icon/arrow.png" alt="" />
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section-index-news">
+        <div class="index-news-top position-relative">
+          <div class="index-public-title">
+            <h2>
+              <span>鮮</span>
+              <span>活</span>
+              <span>報</span>
+              <span>報</span>
+            </h2>
+            <span>LATEST NEWS</span>
+          </div>
+          <div class="news-top-images d-none d-md-none d-lg-block">
+            <div class="news-top-pic">
+              <img
+                src="./src/web/index/Vector-left-01-1.png"
+                alt="color dotted"
+              />
+            </div>
+            <div class="news-top-pic">
+              <img src="./src/web/index/leaf.png" alt="lesf" />
+            </div>
+          </div>
+        </div>
+        <div class="index-news-bottem">
+          <div class="news-bottem-main">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="home-tab-pane"
+                  aria-selected="true"
+                >
+                  所有消息
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile-tab-pane"
+                  aria-selected="false"
+                >
+                  參展資訊
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact-tab-pane"
+                  aria-selected="false"
+                >
+                  新品分享
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="index-news-bg-images">
+                <div class="news-bg-pic">
+                  <img src="./src/web/index/Vector-left-02-2.png" alt="" />
+                </div>
+                <div class="news-bg-pic d-none d-md-none d-lg-block">
+                  <img src="./src/web/index/Vector-right-01-1.png" alt="" />
+                </div>
+                <div class="news-bg-pic d-none d-md-none d-lg-block">
+                  <img src="./src/web/index/Vector-right-02-2.png" alt="" />
+                </div>
+              </div>
+              <div
+                class="tab-pane fade show active"
+                id="home-tab-pane"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
+                <div
+                  class="index-news-content d-flex position-relative justify-content-end"
+                >
+                  <div class="index-news-box ms-auto">
+                    <a
+                      class="d-block text-decoration-none"
+                      href="./news-inner.html"
+                    >
+                      <div class="index-news-item">
+                        <div
+                          class="index-news-item-title d-flex align-items-center"
+                        >
+                          <p>最新消息</p>
+                          <span>更新日期 2024-02-29</span>
+                        </div>
+                        <h3>2023年越南河內食品及食品加工包裝展覽會</h3>
+                        <div class="news-item-txt">
+                          <p>
+                            來了11月份第二場越南大型展會，明天我們會在展場與大家見面喔，歡迎來找我們2023年越...
+                          </p>
+                        </div>
+
+                        <div class="index-news-item-pic position-absolute">
+                          <img src="./src/web/index/news-img-01.png" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      class="d-block text-decoration-none"
+                      href="./news-inner.html"
+                    >
+                      <div class="index-news-item">
+                        <div
+                          class="index-news-item-title d-flex align-items-center"
+                        >
+                          <p>最新消息</p>
+                          <span>更新日期 2024-02-29</span>
+                        </div>
+                        <h3>2023年越南河內食品及食品加工包裝展覽會</h3>
+                        <div class="news-item-txt">
+                          <p>
+                            來了11月份第二場越南大型展會，明天我們會在展場與大家見面喔，歡迎來找我們2023年越...
+                          </p>
+                        </div>
+
+                        <div class="index-news-item-pic position-absolute">
+                          <img src="./src/web/index/news-img-02.png" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      class="d-block text-decoration-none"
+                      href="./news-inner.html"
+                    >
+                      <div class="index-news-item">
+                        <div
+                          class="index-news-item-title d-flex align-items-center"
+                        >
+                          <p>最新消息</p>
+                          <span>更新日期 2024-02-29</span>
+                        </div>
+                        <h3>2023年越南河內食品及食品加工包裝展覽會</h3>
+                        <div class="news-item-txt">
+                          <p>
+                            來了11月份第二場越南大型展會，明天我們會在展場與大家見面喔，歡迎來找我們2023年越...
+                          </p>
+                        </div>
+
+                        <div class="index-news-item-pic position-absolute">
+                          <img src="./src/web/index/news-img-03.png" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      class="d-block text-decoration-none"
+                      href="./news-inner.html"
+                    >
+                      <div class="index-news-item">
+                        <div
+                          class="index-news-item-title d-flex align-items-center"
+                        >
+                          <p>最新消息</p>
+                          <span>更新日期 2024-02-29</span>
+                        </div>
+                        <h3>2023年越南河內食品及食品加工包裝展覽會</h3>
+                        <div class="news-item-txt">
+                          <p>
+                            來了11月份第二場越南大型展會，明天我們會在展場與大家見面喔，歡迎來找我們2023年越...
+                          </p>
+                        </div>
+
+                        <div class="index-news-item-pic position-absolute">
+                          <img src="./src/web/index/news-img-04.png" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <a
+                  class="watch-btn d-flex flex-column align-items-center justify-content-center mx-auto position-relative"
+                  href="./news.html"
+                >
+                  <span>更多消息</span>
+                  <div class="watch-btn-arrow">
+                    <img src="./src/web/icon/arrow.png" alt="arrow" />
+                  </div>
+                </a>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="profile-tab-pane"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+                tabindex="0"
+              >
+                <div
+                  class="index-news-content d-flex position-relative justify-content-end"
+                >
+                  <div class="index-news-box ms-auto">
+                    <a
+                      class="d-block text-decoration-none"
+                      href="./news-inner.html"
+                    >
+                      <div class="index-news-item">
+                        <div
+                          class="index-news-item-title d-flex align-items-center"
+                        >
+                          <p>最新消息</p>
+                          <span>更新日期 2024-02-29</span>
+                        </div>
+                        <h3>2023年越南河內食品及食品加工包裝展覽會</h3>
+                        <div class="news-item-txt">
+                          <p>
+                            來了11月份第二場越南大型展會，明天我們會在展場與大家見面喔，歡迎來找我們2023年越...
+                          </p>
+                        </div>
+
+                        <div class="index-news-item-pic position-absolute">
+                          <img src="./src/web/index/news-img-01.png" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      class="d-block text-decoration-none"
+                      href="./news-inner.html"
+                    >
+                      <div class="index-news-item">
+                        <div
+                          class="index-news-item-title d-flex align-items-center"
+                        >
+                          <p>最新消息</p>
+                          <span>更新日期 2024-02-29</span>
+                        </div>
+                        <h3>2023年越南河內食品及食品加工包裝展覽會</h3>
+                        <div class="news-item-txt">
+                          <p>
+                            來了11月份第二場越南大型展會，明天我們會在展場與大家見面喔，歡迎來找我們2023年越...
+                          </p>
+                        </div>
+
+                        <div class="index-news-item-pic position-absolute">
+                          <img src="./src/web/index/news-img-02.png" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      class="d-block text-decoration-none"
+                      href="./news-inner.html"
+                    >
+                      <div class="index-news-item">
+                        <div
+                          class="index-news-item-title d-flex align-items-center"
+                        >
+                          <p>最新消息</p>
+                          <span>更新日期 2024-02-29</span>
+                        </div>
+                        <h3>2023年越南河內食品及食品加工包裝展覽會</h3>
+                        <div class="news-item-txt">
+                          <p>
+                            來了11月份第二場越南大型展會，明天我們會在展場與大家見面喔，歡迎來找我們2023年越...
+                          </p>
+                        </div>
+
+                        <div class="index-news-item-pic position-absolute">
+                          <img src="./src/web/index/news-img-03.png" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      class="d-block text-decoration-none"
+                      href="./news-inner.html"
+                    >
+                      <div class="index-news-item">
+                        <div
+                          class="index-news-item-title d-flex align-items-center"
+                        >
+                          <p>最新消息</p>
+                          <span>更新日期 2024-02-29</span>
+                        </div>
+                        <h3>2023年越南河內食品及食品加工包裝展覽會</h3>
+                        <div class="news-item-txt">
+                          <p>
+                            來了11月份第二場越南大型展會，明天我們會在展場與大家見面喔，歡迎來找我們2023年越...
+                          </p>
+                        </div>
+
+                        <div class="index-news-item-pic position-absolute">
+                          <img src="./src/web/index/news-img-04.png" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <a
+                  class="watch-btn position-relative d-flex flex-column align-items-center justify-content-center mx-auto"
+                  href="./news.html"
+                >
+                  <span>更多消息</span>
+                  <div class="watch-btn-arrow">
+                    <img src="./src/web/icon/arrow.png" alt="arrow" />
+                  </div>
+                </a>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="contact-tab-pane"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+                tabindex="0"
+              >
+                <div
+                  class="index-news-content d-flex position-relative justify-content-end"
+                >
+                  <div class="index-news-box ms-auto">
+                    <a
+                      class="d-block text-decoration-none"
+                      href="./news-inner.html"
+                    >
+                      <div class="index-news-item">
+                        <div
+                          class="index-news-item-title d-flex align-items-center"
+                        >
+                          <p>最新消息</p>
+                          <span>更新日期 2024-02-29</span>
+                        </div>
+                        <h3>2023年越南河內食品及食品加工包裝展覽會</h3>
+                        <div class="news-item-txt">
+                          <p>
+                            來了11月份第二場越南大型展會，明天我們會在展場與大家見面喔，歡迎來找我們2023年越...
+                          </p>
+                        </div>
+
+                        <div class="index-news-item-pic position-absolute">
+                          <img src="./src/web/index/news-img-01.png" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      class="d-block text-decoration-none"
+                      href="./news-inner.html"
+                    >
+                      <div class="index-news-item">
+                        <div
+                          class="index-news-item-title d-flex align-items-center"
+                        >
+                          <p>最新消息</p>
+                          <span>更新日期 2024-02-29</span>
+                        </div>
+                        <h3>2023年越南河內食品及食品加工包裝展覽會</h3>
+                        <div class="news-item-txt">
+                          <p>
+                            來了11月份第二場越南大型展會，明天我們會在展場與大家見面喔，歡迎來找我們2023年越...
+                          </p>
+                        </div>
+
+                        <div class="index-news-item-pic position-absolute">
+                          <img src="./src/web/index/news-img-02.png" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      class="d-block text-decoration-none"
+                      href="./news-inner.html"
+                    >
+                      <div class="index-news-item">
+                        <div
+                          class="index-news-item-title d-flex align-items-center"
+                        >
+                          <p>最新消息</p>
+                          <span>更新日期 2024-02-29</span>
+                        </div>
+                        <h3>2023年越南河內食品及食品加工包裝展覽會</h3>
+                        <div class="news-item-txt">
+                          <p>
+                            來了11月份第二場越南大型展會，明天我們會在展場與大家見面喔，歡迎來找我們2023年越...
+                          </p>
+                        </div>
+
+                        <div class="index-news-item-pic position-absolute">
+                          <img src="./src/web/index/news-img-03.png" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      class="d-block text-decoration-none"
+                      href="./news-inner.html"
+                    >
+                      <div class="index-news-item">
+                        <div
+                          class="index-news-item-title d-flex align-items-center"
+                        >
+                          <p>最新消息</p>
+                          <span>更新日期 2024-02-29</span>
+                        </div>
+                        <h3>2023年越南河內食品及食品加工包裝展覽會</h3>
+                        <div class="news-item-txt">
+                          <p>
+                            來了11月份第二場越南大型展會，明天我們會在展場與大家見面喔，歡迎來找我們2023年越...
+                          </p>
+                        </div>
+
+                        <div class="index-news-item-pic position-absolute">
+                          <img src="./src/web/index/news-img-04.png" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <a
+                  class="watch-btn d-flex flex-column align-items-center justify-content-center mx-auto position-relative"
+                  href="./news.html"
+                >
+                  <span>更多消息</span>
+                  <div class="watch-btn-arrow">
+                    <img src="./src/web/icon/arrow.png" alt="arrow" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-index-product">
+        <div class="index-product-top position-relative">
+          <div class="index-product-top-img d-none d-md-none d-lg-block">
+            <div class="product-top-pic">
+              <img src="./src/web/index/mango.png" alt="mongo" />
+            </div>
+          </div>
+          <div class="index-public-title">
+            <h2>
+              <span>產</span>
+              <span>品</span>
+              <span>介</span>
+              <span>紹</span>
+            </h2>
+            <span>MAIN PRODUCTS</span>
+          </div>
+        </div>
+        <div class="index-product-bottem position-relative">
+          <div class="product-bottem-bg-images d-none d-md-none d-lg-block">
+            <div class="product-bottem-pic">
+              <img src="./src/web/index/Vector-left-03-3.png" />
+            </div>
+            <div class="product-bottem-pic">
+              <img src="./src/web/index/Vector-right-03-3.png" alt="" />
+            </div>
+            <div class="product-bottem-pic">
+              <img src="./src/web/index/Osmanthus-fragrans.png" alt="" />
+            </div>
+          </div>
+          <div class="product-bottem-main">
+            <div class="index-product-item">
+              <div class="index-product-pic">
+                <img src="./src/web/index/jelly-series.png" alt="product pic" />
+              </div>
+              <div class="product-bottem-content d-flex flex-column">
+                <div class="product-series d-flex align-items-center">
+                  <p>01</p>
+                  <div class="product-series-name d-flex flex-column">
+                    <h3>凍感系列</h3>
+                    <span class="order-0">Jelly Rush Series</span>
+                  </div>
+                </div>
+                <div class="product-stars-box d-flex align-items-center">
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                </div>
+                <div class="product-bottem-dotted"></div>
+                <p>
+                  Q彈滑嫩，入口即化的風味晶凍，從添加食用乾燥花瓣的花草系列，今年我們又推出新品拉!<br />
+                  繽紛水果風味與熟悉最對味的乳酸風味，達到視覺、嗅覺、味覺三重享受。
+                </p>
+                <button
+                  type="button"
+                  class="btn know-more-btn d-flex align-items-center"
+                  onclick="window.location.href='./product-main.html'"
+                >
+                  <span>了解更多</span>
+                  <div class="know-more-pic">
+                    <img src="./src/web/icon/arrow.png" alt="" />
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="index-product-item">
+              <div class="index-product-pic">
+                <img src="./src/web/index/3q-series.png" alt="product pic" />
+              </div>
+              <div class="product-bottem-content d-flex flex-column">
+                <div class="product-series d-flex align-items-center">
+                  <p>02</p>
+                  <div class="product-series-name d-flex flex-column">
+                    <h3>3Q果系列</h3>
+                    <span class="order-0">Konjac Series</span>
+                  </div>
+                </div>
+                <div class="product-stars-box d-flex align-items-center">
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                </div>
+                <div class="product-bottem-dotted"></div>
+                <p>
+                  每顆3Q果都是由蒟蒻、海藻膠、砂糖、果膠和關華豆膠等成分所組成。多年來，我們致力於生產健康、低熱量的產品，3Q果熱量低(70大卡/100公克)，可廣泛運用在各類飲品，滿足您的口腹之慾並可增加飽足感。
+                </p>
+                <button
+                  type="button"
+                  class="btn know-more-btn d-flex align-items-center"
+                  onclick="window.location.href='./product-main.html'"
+                >
+                  <span>了解更多</span>
+                  <div class="know-more-pic">
+                    <img src="./src/web/icon/arrow.png" alt="" />
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="index-product-item">
+              <div class="index-product-pic">
+                <img
+                  src="./src/web/index/fruit-pulp-series.png"
+                  alt="product pic"
+                />
+              </div>
+              <div class="product-bottem-content d-flex flex-column">
+                <div class="product-series d-flex align-items-center">
+                  <p>03</p>
+                  <div class="product-series-name d-flex flex-column">
+                    <h3>風味果漿系列</h3>
+                    <span class="order-0">Flavor Jam Series</span>
+                  </div>
+                </div>
+                <div class="product-stars-box d-flex align-items-center">
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                  <div class="product-star">
+                    <img src="./src/web/icon/star.svg" alt="light srar" />
+                  </div>
+                </div>
+                <div class="product-bottem-dotted"></div>
+                <p>
+                  選用各季新鮮特色水果熬製而成的含果肉果漿，富含天然水果與原汁在其中，讓飲品可以喝的滿足，也喝的開心。
+                </p>
+                <button
+                  type="button"
+                  class="btn know-more-btn d-flex align-items-center"
+                  onclick="window.location.href='./product-main.html'"
+                >
+                  <span>了解更多</span>
+                  <div class="know-more-pic">
+                    <img src="./src/web/icon/arrow.png" alt="" />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-index-shop">
+        <div class="index-shop-top position-relative">
+          <div class="index-shop-top-images">
+            <div class="shop-top-pic position-absolute">
+              <img src="./src/web/index/pineapple.png" alt="product pic" />
+            </div>
+          </div>
+          <div class="index-public-title">
+            <h2>
+              <span>線</span>
+              <span>上</span>
+              <span>購</span>
+              <span>物</span>
+            </h2>
+            <span>SHOPPING ZONE</span>
+          </div>
+        </div>
+        <div class="index-shop-bottem position-relative">
+          <div class="shop-bottem-main">
+            <div class="swiper shopSwiper">
+              <div class="swiper-wrapper">
+                <!-- 1 -->
+                <div class="swiper-slide">
+                  <div
+                    class="index-shop-card d-flex flex-wrap justify-content-between px-0"
+                  >
+                    <div class="shop-card-content d-flex flex-column">
+                      <h3>斑斕葉粉條</h3>
+                      <span>風味果醬系列</span>
+                      <div class="shop-card-txt">
+                        <p>
+                          經典原味，低卡少負擔，口感Q彈是咀嚼控的最愛經典原味，透明顆粒，風味淨，搭什麼都對味經典原味，透明顆粒，風味純淨，搭什麼都對味
+                        </p>
+                      </div>
+
+                      <div class="shop-card-price d-flex align-items-end">
+                        <p><span>NT$ </span>699</p>
+                        <del><span>NT$888</span></del>
+                      </div>
+                      <div class="shop-card-dotted"></div>
+                      <form class="index-shop-from">
+                        <div class="shop-from-item d-flex">
+                          <label for="shop-size">規格</label>
+                          <select
+                            id="shop-size"
+                            class="form-select rounded-0 flex-wrap"
+                            aria-label="Default select example"
+                          >
+                            <option selected>請選擇商品規格</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="shop-from-item d-flex">
+                          <label for="shop-qty">數量</label>
+                          <div class="input-group">
+                            <span class="input-group-text rounded-0">
+                              <i class="bi bi-plus"></i>
+                            </span>
+                            <input
+                              id="shop-qty"
+                              type="number"
+                              min="1"
+                              class="form-control"
+                              aria-label="Amount (to the nearest dollar)"
+                            />
+                            <span class="input-group-text rounded-0">
+                              <i class="bi bi-dash"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </form>
+                      <div
+                        class="shop-card-btns d-flex flex-wrap align-items-center"
+                      >
+                        <button
+                          class="btn"
+                          type="button"
+                          onclick="window.location.href='./product-main-inner02.html'"
+                        >
+                          <span>立即購買</span>
+                        </button>
+                        <button
+                          class="btn d-flex align-items-baseline"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#shop-cart-info"
+                        >
+                          <span>加入購物車</span>
+                          <div class="shop-card-arrow">
+                            <img src="./src/web/icon/arrow.png" alt="arrow" />
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <a
+                      href="./product-main-inner02.html"
+                      class="shop-card-pic d-block pe-0"
+                    >
+                      <img src="./src/web/index/shopping-zone-01.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <!-- 1 -->
+                <div class="swiper-slide">
+                  <div
+                    class="index-shop-card d-flex flex-wrap justify-content-between px-0"
+                  >
+                    <div class="shop-card-content d-flex flex-column">
+                      <h3>斑斕葉粉條</h3>
+                      <span>風味果醬系列</span>
+                      <div class="shop-card-txt">
+                        <p>
+                          經典原味，低卡少負擔，口感Q彈是咀嚼控的最愛經典原味，透明顆粒，風味淨，搭什麼都對味經典原味，透明顆粒，風味純淨，搭什麼都對味
+                        </p>
+                      </div>
+
+                      <div class="shop-card-price d-flex align-items-end">
+                        <p><span>NT$ </span>699</p>
+                        <del><span>NT$888</span></del>
+                      </div>
+                      <div class="shop-card-dotted"></div>
+                      <form class="index-shop-from">
+                        <div class="shop-from-item d-flex">
+                          <label for="shop-size">規格</label>
+                          <select
+                            id="shop-size"
+                            class="form-select rounded-0 flex-wrap"
+                            aria-label="Default select example"
+                          >
+                            <option selected>請選擇商品規格</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="shop-from-item d-flex">
+                          <label for="shop-qty">數量</label>
+                          <div class="input-group">
+                            <span class="input-group-text rounded-0">
+                              <i class="bi bi-plus"></i>
+                            </span>
+                            <input
+                              id="shop-qty"
+                              type="number"
+                              min="1"
+                              class="form-control"
+                              value="1"
+                            />
+                            <span class="input-group-text rounded-0">
+                              <i class="bi bi-dash"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </form>
+                      <div
+                        class="shop-card-btns d-flex flex-wrap align-items-center"
+                      >
+                        <button
+                          class="btn"
+                          type="button"
+                          onclick="window.location.href='./product-main-inner02.html'"
+                        >
+                          <span>立即購買</span>
+                        </button>
+                        <button
+                          class="btn d-flex align-items-baseline"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#shop-cart-info"
+                        >
+                          <span>加入購物車</span>
+                          <div class="shop-card-arrow">
+                            <img src="./src/web/icon/arrow.png" alt="arrow" />
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <a
+                      href="./product-main-inner02.html"
+                      class="shop-card-pic d-block pe-0"
+                    >
+                      <img src="./src/web/index/shopping-zone-01.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <!-- 1 -->
+                <div class="swiper-slide">
+                  <div
+                    class="index-shop-card d-flex flex-wrap justify-content-between px-0"
+                  >
+                    <div class="shop-card-content d-flex flex-column">
+                      <h3>斑斕葉粉條</h3>
+                      <span>風味果醬系列</span>
+                      <div class="shop-card-txt">
+                        <p>
+                          經典原味，低卡少負擔，口感Q彈是咀嚼控的最愛經典原味，透明顆粒，風味淨，搭什麼都對味經典原味，透明顆粒，風味純淨，搭什麼都對味
+                        </p>
+                      </div>
+
+                      <div class="shop-card-price d-flex align-items-end">
+                        <p><span>NT$ </span>699</p>
+                        <del><span>NT$888</span></del>
+                      </div>
+                      <div class="shop-card-dotted"></div>
+                      <form class="index-shop-from">
+                        <div class="shop-from-item d-flex">
+                          <label for="shop-size">規格</label>
+                          <select
+                            id="shop-size"
+                            class="form-select rounded-0 flex-wrap"
+                            aria-label="Default select example"
+                          >
+                            <option selected>請選擇商品規格</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="shop-from-item d-flex">
+                          <label for="shop-qty">數量</label>
+                          <div class="input-group">
+                            <span class="input-group-text rounded-0">
+                              <i class="bi bi-plus"></i>
+                            </span>
+                            <input
+                              id="shop-qty"
+                              type="number"
+                              min="1"
+                              class="form-control"
+                              value="1"
+                            />
+                            <span class="input-group-text rounded-0">
+                              <i class="bi bi-dash"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </form>
+                      <div
+                        class="shop-card-btns d-flex flex-wrap align-items-center"
+                      >
+                        <button
+                          class="btn"
+                          type="button"
+                          onclick="window.location.href='./product-main-inner02.html'"
+                        >
+                          <span>立即購買</span>
+                        </button>
+                        <button
+                          class="btn d-flex align-items-baseline"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#shop-cart-info"
+                        >
+                          <span>加入購物車</span>
+                          <div class="shop-card-arrow">
+                            <img src="./src/web/icon/arrow.png" alt="arrow" />
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <a
+                      href="./product-main-inner02.html"
+                      class="shop-card-pic d-block pe-0"
+                    >
+                      <img src="./src/web/index/shopping-zone-01.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next d-none d-md-none d-lg-block">
+              <img
+                width="60px"
+                src="./src/web/index/carousel-arrow-right.png"
+                alt="right"
+              />
+            </div>
+            <div class="swiper-button-prev d-none d-md-none d-lg-block">
+              <img
+                width="60px"
+                src="./src/web/index/carousel-arrow-left.png"
+                alt="left"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- go-top -->
+    <div id="scrollBtn">
+      <img src="./src/web/icon/top.png" alt="" />
+    </div>
+    <!-- 內文END -->
+    <footer class="section-footer">
+      <div class="footer-main d-flex flex-wrap align-items-start">
+        <div class="footer-left">
+          <a href="./index.html" class="footer-logo-pic d-block">
+            <img src="./src/web/icon/logo2.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="footer-right row px-0 mx-0">
+          <div class="col-12 col-md-12 col-lg-7 px-0">
+            <ul class="footer-menu-list d-flex flex-wrap align-items-center">
+              <li>
+                <a href="./about.html">關於我們</a>
+              </li>
+              <li>
+                <a href="./news.html">鮮活報報</a>
+              </li>
+              <li>
+                <a href="./product.html">產品介紹</a>
+              </li>
+              <li>
+                <a href="./product-recipe.html">應用食譜</a>
+              </li>
+              <li>
+                <a href="product-onlineShop.html">線上購物</a>
+              </li>
+            </ul>
+            <div class="footer-contact-profile d-flex flex-column">
+              <div class="footer-contact-phone d-flex flex-wrap">
+                <a href="tel:+886-5-2367999"> 電話: (05)-236-7999 </a>
+                <a class="ms-2" href="tel:+886-5-236-3777">
+                  傳真: (05)-236-3777
+                </a>
+              </div>
+              <a href="mailto:sales@freshlife.com.tw"
+                >信箱: sales@freshlife.com.tw
+              </a>
+              <a
+                target="_blank"
+                href="https://maps.app.goo.gl/AP4fU2jJH9X8bDJD7"
+                >地址: 600嘉義市西區紅瓦里新民路111號</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-5 px-0">
+            <div class="footer-social-media">
+              <div class="footer-media-box d-flex flex-wrap">
+                <a
+                  href="https://www.facebook.com/ifreshlife"
+                  class="footer-media-item"
+                >
+                  <img
+                    width="50px"
+                    src="./src/web/icon/facebook.png"
+                    alt="fb"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/freshlife_tw/"
+                  class="footer-media-item"
+                >
+                  <img
+                    width="50px"
+                    src="./src/web/icon/instagram.png"
+                    alt="ig"
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/@FRESHLIFE1989"
+                  class="footer-media-item"
+                >
+                  <img width="50px" src="./src/web/icon/youtube.png" alt="yt" />
+                </a>
+              </div>
+              <button
+                class="btn footer-media-contact d-flex align-items-center"
+                onclick="window.location.href='./contact-us.html'"
+              >
+                <div class="media-contact-pic">
+                  <img src="./src/web/icon/contact.png" alt="mail pic" />
+                </div>
+                <span>聯絡我們</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-12 p-0 d-flex flex-wrap align-items-end justify-content-between"
+          >
+            <ul class="footer-shop-content d-flex flex-wrap align-items-center">
+              <li><a href="./shopping-guide.html">購物說明</a></li>
+              <li><a href="./shopping-return.html">退換貨政策</a></li>
+              <li><a href="./shopping-trems.html">會員服務條款</a></li>
+              <li><a href="./shopping-privacy.html">隱私權政策</a></li>
+            </ul>
+            <div class="copyright-main">
+              <p>
+                <span>Copyright 2024</span>&copy;大東羊食品工業股份有限公司
+                <a
+                  class="renu-http"
+                  href="https://www.renu.com.tw/
+              "
+                  >Designed By RENU
+                </a>
+                &nbsp;|&nbsp;<a href="./sitemap.html">網站導覽</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 語言 model -->
+    <div
+      class="modal fade"
+      id="langmodel"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="langbox d-flex flex-column align-items-center mx-auto">
+            <div class="lang-pic">
+              <img src="./src/web/icon/language-56.png" alt="lang" />
+            </div>
+            <p>LANGUAGE</p>
+            <a href="https://www.google.com/">繁體中文</a>
+            <a href="#">English</a>
+            <a href="#">Tiếng Việt</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 搜尋 model -->
+    <div
+      class="modal fade"
+      id="searchmodel"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="search-model mx-auto input-group input-group-sm mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="請輸入關鍵字"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm"
+            /><a href="#" class="input-group-text" id="inputGroup-sizing-sm"
+              >搜尋</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 加入購物車model -->
+    <!-- shop -->
+    <div
+      class="modal fade"
+      id="shop-cart-info"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="shop-cart-model position-relative">
+            <div class="cart-model-title position-absolute">
+              <p>購物車內合計有 2 項商品</p>
+            </div>
+            <div class="shop-cart-content d-flex align-items-center">
+              <a class="shop-cart-pic d-block">
+                <img src="./src/web/product/main-product-02.png" alt="" />
+              </a>
+              <div class="cart-model-txt">
+                <p>
+                  原味晶球<br />
+                  規格:2.5kg/包<br />
+                  數量:2<br />
+                </p>
+              </div>
+              <div class="cart-model-del">
+                <img src="./src/web/icon/delete-Default.png" />
+              </div>
+            </div>
+            <button
+              class="cart-model-btn btn"
+              type="button"
+              onclick="window.location.href='./shopCart-step01.html'"
+            >
+              前往結帳
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fancybox -->
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Custom options
+      });
+    </script>
+    <!-- 底部 -->
+
+    <!-- bs -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- Swiper JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="./js/controller.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="./js/scroll-top.js"></script>
+  </body>
+</html>

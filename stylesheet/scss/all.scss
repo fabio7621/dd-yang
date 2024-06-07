@@ -1,0 +1,86 @@
+@import "../bootstrap.css";
+@import "../bootstrap-icons.min.css";
+@import "../reset.css";
+@import "../owl.carousel.min.css";
+@import "../owl.theme.default.css";
+@import "../swiper-bundle.min.css";
+@import "../slick-theme.css";
+@import "../slick.css";
+@import "../fancybox.css";
+
+@import "../scss/navbar";
+@import "../scss/footer";
+@import "../scss/index";
+@import "../scss/indexSwi";
+@import "../scss/about";
+@import "../scss/about02";
+@import "../scss/about03";
+@import "../scss/about04";
+@import "../scss/news";
+@import "../scss/newsinner";
+@import "../scss/product";
+@import "../scss/productinner";
+@import "../scss/onlineshop";
+@import "../scss/recipe-inner";
+@import "../scss/contact";
+@import "../scss/shopcart";
+@import "../scss/myaccount";
+@import "../scss/memberpoint";
+@import "../scss/update";
+@import "../scss/shopstep";
+@import "../scss/login";
+@import "../scss/signup";
+@import "../scss/sitemap";
+@import "../scss/mymodel";
+* body {
+  font-family: "Noto Sans TC", sans-serif;
+  position: relative;
+  // font-family: "Work Sans", sans-serif;
+  // font-family: "Cuprum", sans-serif;
+}
+.main-wrap {
+  background-image: url(../../src/web/icon/background.png);
+  background-size: 120px;
+}
+@media (max-width: 500px) {
+  .main-wrap {
+    background-size: 100px;
+  }
+}
+.normal-font-style400 {
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+.normal-font-style500 {
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.normal-font-style700 {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.public-dotted-style {
+  height: 5px;
+  background-image: url(../../src/web/icon/Line101.png);
+  background-size: contain;
+  background-repeat: repeat;
+}
+.btn-check:checked + .btn,
+:not(.btn-check) + .btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+  border-color: transparent;
+  background-color: #dae24a;
+}
+/* 隱藏數字輸入框的箭頭（Webkit瀏覽器） */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* 隱藏數字輸入框的箭頭（Firefox） */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
